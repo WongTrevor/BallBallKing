@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BallballKing - Emperor of the Sun</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Russo+One&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTTXSK6gIBmxGoK3rJyEf8JxjOjheN/YDQg4ctuT1m1e+aVM+kGFKmNvsKdpFRkBiRJ2GGZqVw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Lightbox2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+    
+    <!-- Swiper CSS for Featured News Slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="#hero">Ballball<span>King</span></a>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="#hero" aria-label="Home">Home</a></li>
+                <li><a href="#about" aria-label="About">About</a></li>
+                <li><a href="#gallery" aria-label="Gallery">Gallery</a></li>
+                <li><a href="#news" aria-label="News">News</a></li>
+                <li><a href="#contact" aria-label="Contact">Contact</a></li>
+                <li><button id="dark-mode-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <div class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="navbar-links">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Ballball<span>King</span></h1>
+            <p>Emperor of the Sun, Savior of the World</p>
+            <button id="cta-button">Discover His Power</button>
+        </div>
+        <!-- 3D Canvas -->
+        <canvas id="hero-canvas"></canvas>
+    </section>
+    
+    <!-- Featured News Slider -->
+    <section class="featured-news">
+        <h2>Featured News</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper" id="featured-news-container">
+                <!-- Featured news slides will be loaded here -->
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About BallballKing</h2>
+        <div class="abilities-container">
+            <div class="ability-card">
+                <img src="images/sun-icon.png" alt="Son of the Sun" width="100">
+                <h3>Son of the Sun</h3>
+                <p>Born from the heart of the sun, BallballKing harnesses its immense energy.</p>
+            </div>
+            <div class="ability-card">
+                <img src="images/strength-icon.png" alt="Insanely Strong" width="100">
+                <h3>Insanely Strong</h3>
+                <p>Possesses unparalleled strength that commands respect from all.</p>
+            </div>
+            <div class="ability-card">
+                <img src="images/control-icon.png" alt="Sun Power Control" width="100">
+                <h3>Sun Power Control</h3>
+                <p>Can manipulate sun energy to protect and save the world.</p>
+            </div>
+        </div>
+        <!-- 3D Animation Container -->
+        <div class="about-3d-container">
+            <canvas id="about-canvas"></canvas>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <h2>BallballKing in Action</h2>
+        <div class="gallery-grid">
+            <a href="ball1.jpg" data-lightbox="gallery" data-title="BallballKing in Action 1">
+                <img src="ball1.jpg" alt="BallballKing in Action 1" width="400">
+            </a>
+            <a href="ball.jpg" data-lightbox="gallery" data-title="BallballKing in Action 2">
+                <img src="ball.jpg" alt="BallballKing in Action 2" width="400">
+            </a>
+            <a href="ball3.jpeg" data-lightbox="gallery" data-title="BallballKing in Action 3">
+                <img src="ball3.jpeg" alt="BallballKing in Action 3" width="400">
+            </a>
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+    
+    <!-- News Section -->
+    <section id="news" class="news-section">
+        <h2>Latest News</h2>
+        <input type="text" id="news-search" placeholder="Search News..." class="news-search">
+        <div class="news-container" id="news-container">
+            <!-- News articles will be loaded here from news.json -->
+        </div>
+        <button id="load-more" class="load-more">Load More</button>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact BallballKing</h2>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/yourpage" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/yourprofile" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/yourprofile" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; <span id="year"></span> BallballKing. All rights reserved.</p>
+    </footer>
+    
+    <!-- Modal Structure -->
+    <div id="news-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img src="" alt="" class="modal-image">
+            <h3 class="modal-title"></h3>
+            <p class="modal-date"></p>
+            <p class="modal-text"></p>
+            <div class="social-share">
+                <a href="#" aria-label="Share on Facebook" class="share-facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Share on Twitter" class="share-twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Share on LinkedIn" class="share-linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- External Libraries -->
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <!-- GSAP ScrollTrigger Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <!-- Swiper JS for Featured News Slider -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Main JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>

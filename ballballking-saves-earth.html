@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BallballKing Saves Earth from Catastrophic Solar Flare</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Russo+One&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTTXSK6gIBmxGoK3rJyEf8JxjOjheN/YDQg4ctuT1m1e+aVM+kGFKmNvsKdpFRkBiRJ2GGZqVw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Lightbox2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+    
+    <!-- Swiper CSS for Featured News Slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+    
+    <!-- Navbar (same as main page) -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="../index.html#hero">Ballball<span>King</span></a>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="../index.html#hero">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#gallery">Gallery</a></li>
+                <li><a href="../index.html#news">News</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+                <li><button id="dark-mode-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <div class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="navbar-links">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- News Detail Section -->
+    <section class="news-detail-section">
+        <div class="news-detail-container">
+            <img src="../images/news/solar_flare.jpg" alt="BallballKing Saves Earth" class="news-detail-image">
+            <h1>BallballKing Saves Earth from Catastrophic Solar Flare</h1>
+            <p class="news-detail-date">April 15, 2024</p>
+            <p class="news-detail-content">
+                In an unprecedented display of power, BallballKing harnessed the energy of the sun to neutralize a massive solar flare threatening to wipe out all electronic devices on Earth. Scientists worldwide are in awe of his swift action that ensured global safety and continuity.
+                <br><br>
+                The solar flare, one of the largest recorded in recent history, posed a significant threat to global communications and power grids. BallballKing's intervention not only saved the planet from potential technological collapse but also inspired a new era of solar energy research and environmental stewardship.
+                <br><br>
+                "Our planet stands stronger today because of the unwavering dedication and heroic actions of BallballKing," stated Dr. Elena Martinez, a leading astrophysicist. "His ability to harness and control solar energy is nothing short of miraculous."
+                <br><br>
+                This event has solidified BallballKing's status as a global guardian and a beacon of hope for humanity's future.
+            </p>
+            <a href="../index.html#news" class="back-to-news">← Back to News</a>
+        </div>
+    </section>
+    
+    <!-- Footer (same as main page) -->
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/yourpage" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/yourprofile" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/yourprofile" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; <span id="year"></span> BallballKing. All rights reserved.</p>
+    </footer>
+    
+    <!-- Modal Structure -->
+    <div id="news-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img src="" alt="" class="modal-image">
+            <h3 class="modal-title"></h3>
+            <p class="modal-date"></p>
+            <p class="modal-text"></p>
+            <div class="social-share">
+                <a href="#" aria-label="Share on Facebook" class="share-facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Share on Twitter" class="share-twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Share on LinkedIn" class="share-linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- External Libraries -->
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <!-- GSAP ScrollTrigger Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <!-- Swiper JS for Featured News Slider -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Main JavaScript -->
+    <script src="../scripts.js"></script>
+</body>
+</html>
